@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Scriptorama";
+    src: url("./fonts/Scriptorama.ttf");
+}
+
+#welcome-image {
+    min-height: 700px;
+    text-align: center;
+    color: white;
+    /*background: #EDE7F6;  TODO: Update BG*/
+    background-image: url("../img/c05ddd67c004439391f5ff2545014e07.webp");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#navbar-logo {
+    color: #B39DDB;
+    font-size: 23pt;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+    color: #B39DDB;
+    font-weight: bold;
+}
+
+#person-name {
+    font-size: 75px;
+    font-weight: 700;
+    line-height: 75px;
+    margin-bottom: 85px;
+    font-family: 'Scriptorama';
+}
+
+#greating-text {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 26px;
+    font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#welcome-section {
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: #B39DDB;
+    border-color: #B39DDB;
+}
+
+.btn-xl {
+    font-size: 23px;
+    padding: 20px 40px;
+    font-weight: bold;
+}
+
+#about {
+    margin-top: 32px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.no-border {
+    border: None;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-title-right {
+
+}
+
+.card-addition-text {
+    color: #B39DDB;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#team {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.color-block {
+    display: inline-block;
+    width: 5rem;
+    height: 5rem;
+    margin: .25rem;
+    background-color: #f5f5f5
+}
+
+.color-pallete-items {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#color-block-0 {
+    background-color: #855a7b;
+}
+
+#color-block-1 {
+    background-color: #bdaeca;
+}
+
+#color-block-2 {
+    background-color: #dbdaec;
+}
+
+#color-block-3 {
+    background-color: #5b627e;
+}
+
+#color-block-4 {
+    background-color: #919db7;
+}
+
+#color-block-5 {
+    background-color: #d2dae7;
+}
+
+#color-block-6 {
+    background-color: #edf2f8;
+}
+
+#color-block-7 {
+    background-color: #39374c;
+}
+
+#color-block-8 {
+    background-color: #b7bed3;
+}
+
+#color-block-9 {
+    background-color: #d3b8a0;
+}
+
+#color-block-10 {
+    background-color: #855a7b;
+}
+
+#color-block-11 {
+    background-color: #bdaeca;
+}
+
+#color-block-12 {
+    background-color: #dbdaec;
+}
+
+#color-block-13 {
+    background-color: #5b627e;
+}
+
+#color-block-14 {
+    background-color: #919db7;
+}
+
+#color-block-15 {
+    background-color: #d2dae7;
+}
+
+#color-block-16 {
+    background-color: #edf2f8;
+}
+
+#color-block-17 {
+    background-color: #39374c;
+}
+
+#color-block-18 {
+    background-color: #b7bed3;
+}
+
+#color-block-19 {
+    background-color: #d3b8a0;
+}
