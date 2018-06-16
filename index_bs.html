@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Compare page makeup and page design">
     <meta name="author" content="Vitaliy Krasnov ">
@@ -21,23 +21,20 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 
-<body id="page-top">
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+<body id="page-top" data-spy="scroll" data-target="#navbar" data-offset="250">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
         <a class="navbar-brand" id="navbar-logo" href="#page-top"><b>#vlwedding13</b></a>
         <div class="navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarToggleExternalContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#about">Таймлайн <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#timeline">Таймлайн <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#team">Главные лица</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#color-pallete">Цветовая палитра</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Ваше решение</a>
                 </li>
             </ul>
         </div>
@@ -52,14 +49,14 @@
 
 <section id="welcome-section">
     <div class="container">
-        <div id="person-name">Альберт &nbsp; и Лиля,</div>
+        <div id="person-name"></div>
         <div id="greating-text">для полного счастья нам не хватает только вас!</div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#about">Узнать больше</a>
     </div>
 </section>
 
 <!-- About -->
-<section id="about">
+<section id="timeline">
     <div class="container">
         <div class="section-title text-center">Таймлайн</div>
 
@@ -329,6 +326,27 @@
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/baselibs.js"></script>
+<script charset="utf-8" type="text/javascript">
+    function splitParameters(query) {
+        var parameters = query.split('&');
+        var parametersObject = {};
+        for (var i = 0; i < parameters.length; i++) {
+            var keyVal = parameters[i].split('=');
+            parametersObject[keyVal[0]] = keyVal[1];
+        }
+        return parametersObject;
+    }
+
+    window.onload = function () {
+        var query = window.location.search.substring(1);
+        var parametersObject = splitParameters(query);
+        var decodedPersonName = "Уважаемый гость";
+        if ('name' in parametersObject) {
+            decodedPersonName = decodeURIComponent(escape(window.atob(parametersObject['name'])));
+        }
+        $('#person-name').text(decodedPersonName + ',');
+    }
+</script>
 
 </body>
 </html>
