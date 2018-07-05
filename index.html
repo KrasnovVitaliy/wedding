@@ -50,7 +50,7 @@
 <section id="welcome-section">
     <div class="container">
         <div id="person-name"></div>
-        <div id="greating-text">для полного счастья нам не хватает только вас!</div>
+        <div id="greating-text"></div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#timeline">Узнать больше</a>
     </div>
 </section>
@@ -350,6 +350,11 @@
             decodedPersonName = decodeURIComponent(escape(window.atob(parametersObject['name'])));
         }
         $('#person-name').text(decodedPersonName + ',');
+        if (decodedPersonName.indexOf(' и ') >= 0) {
+            $('#greating-text').text('для полного счастья нам не хватает только вас!');
+        } else {
+            $('#greating-text').text('для полного счастья нам не хватает только тебя!');
+        }
     }
 </script>
 
