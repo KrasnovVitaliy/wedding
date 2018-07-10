@@ -17,6 +17,20 @@
     -o-background-size: cover;
     background-size: cover;
 }
+#welcome-image-small {
+    min-height: 350px;
+    text-align: center;
+    color: white;
+    /*background: #EDE7F6;  TODO: Update BG*/
+    background-image: url("../img/c05ddd67c004439391f5ff2545014e07.bmp");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
 
 #navbar-logo {
     color: #B39DDB;
