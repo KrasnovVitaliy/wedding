@@ -112,6 +112,7 @@
 }
 
 .card-title {
+    color: #B39DDB;
     font-weight: bold;
 }
 
@@ -235,4 +236,26 @@ section {
 
 #color-block-19 {
     background-color: #2f2931;
+}
+
+section {
+    position: relative;
+}
+
+.section-link {
+    min-width: 1px;
+    min-height: 1px;
+    position: absolute;
+    top: -71px;
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        position: relative;
+    }
+
+    .section-link {
+        position: absolute;
+        top: -191px;
+    }
 }
