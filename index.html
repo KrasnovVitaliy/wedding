@@ -12,8 +12,8 @@
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic'
           rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet'
-          type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -49,6 +49,7 @@
 <section id="welcome-section">
     <div class="container">
         <div id="person-name"></div>
+        <p id="intro-text">13 сентября 2018 года у нас свадьба,</p>
         <div id="greating-text"></div>
         <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#timeline">Узнать больше</a>
     </div>
@@ -356,11 +357,9 @@
         }
         $('#person-name').text(decodedPersonName + ',');
         if (decodedPersonName.indexOf(' и ') >= 0) {
-            $('#greating-text').text('13 сентября 2018 года у нас свадьба,' +
-                ' и для полного счастья нам не хватает только вас!');
+            $('#greating-text').text('и для полного счастья нам не хватает только вас!');
         } else {
-            $('#greating-text').text('13 сентября 2018 года у нас свадьба,' +
-                ' и для полного счастья нам не хватает только тебя!');
+            $('#greating-text').text('и для полного счастья нам не хватает только тебя!');
         }
     }
 </script>
