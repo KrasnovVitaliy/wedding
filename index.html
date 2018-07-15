@@ -341,7 +341,9 @@
 
     // Redirecting to mobile version
     if (screen.width <= 699) {
-        document.location = "index_mobile.html";
+        var query = window.location.search.substring(1);
+        console.log(query);
+        document.location = "index_mobile.html?"+query;
     }
 
 
